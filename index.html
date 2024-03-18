@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Instagram 2.O</title>
+    <link rel="icon" type="image/x-icon" href="photos/Instagram_icon.png.webp">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-wrapper">
+            <img src="photos/logo.PNG" class="ins-img" alt="">
+            <input type="text" class="search-box" placeholder="search">
+            <div class="nav-items">
+                <img src="photos/home.PNG" class="icon" alt="">
+                <img src="photos/messenger.PNG" class="icon" alt="">
+                <img src="photos/add.PNG" class="icon" id="post-add" alt="">
+                <img src="photos/explore.PNG" class="icon" alt="">
+                <img src="photos/like.PNG" class="icon" alt="">
+                <div class="icon user-profile"></div>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+     <!-- Story Section Start -->
+     <section class="main">
+        <div class="wrapper">
+            <div class="left-col">
+                <div class="status-wrapper">
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="photos/post.jpg" alt=""></div>
+                        <p class="username">wahe</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="photos/post.jpg" alt=""></div>
+                        <p class="username">yogesh</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="photos/post.jpg" alt=""></div>
+                        <p class="username">vriti</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="photos/post.jpg" alt=""></div>
+                        <p class="username">vrinda</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="photos/post.jpg" alt=""></div>
+                        <p class="username">unknown1</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="photos/post.jpg" alt=""></div>
+                        <p class="username">unknown2</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="photos/post.jpg" alt=""></div>
+                        <p class="username">unknown3</p>
+                    </div>
+                    <div class="status-card">
+                        <div class="profile-pic"><img src="photos/post.jpg" alt=""></div>
+                        <p class="username">unknown4</p>
+                    </div>
+                </div>
+                
+                <!-- First Post -->
+                <!-- <div class="all-post">
+                    
+                </div> -->
+            </div>
+    <!-- Story Section End -->
+
+
+
+
+     <!-- Sidebar Section Start --> 
+     <div class="right-col">
+        <div class="profile-card">
+            <div class="profile-pic">
+                <img src="photos/profile.jpeg" alt="">
+            </div>
+            <div>
+                <p class="username">wahe</p>
+                <p class="sub-text">waheguru_singh77</p>
+            </div>
+            <button class="action-btn">switch</button>
+        </div>
+        <p class="suggestion-text">Suggestions for you</p>
+        <div class="profile-card">
+            <div class="profile-pic">
+                <img src="photos/post.jpg" alt="">
+            </div>
+            <div>
+                <p class="username">abc</p>
+                <p class="sub-text">Followed by bca</p>
+            </div>
+            <button class="action-btn">follow</button>
+        </div>
+        <div class="profile-card">
+            <div class="profile-pic">
+                <img src="photos/post.jpg" alt="">
+            </div>
+            <div>
+                <p class="username">kal</p>
+                <p class="sub-text">New to Instagram</p>
+            </div>
+            <button class="action-btn">follow</button>
+        </div>
+        <div class="profile-card">
+            <div class="profile-pic">
+                <img src="photos/post.jpg" alt="">
+            </div>
+            <div>
+                <p class="username">popy</p>
+                <p class="sub-text">Followed by gsidhu + 2 more</p>
+            </div>
+            <button class="action-btn">follow</button>
+        </div>
+        <div class="profile-card">
+            <div class="profile-pic">
+                <img src="photos/post.jpg"  alt="">
+            </div>
+            <div>
+                <p class="username">ironman</p>
+                <p class="sub-text">Followed by Marvels + 1 more</p>
+            </div>
+            <button class="action-btn">follow</button>
+        </div>
+        <div class="profile-card">
+            <div class="profile-pic">
+                <img src="photos/post.jpg" alt="">
+            </div>
+            <div>
+                <p class="username">salman</p>
+                <p class="sub-text">Followed by Abhishek</p>
+            </div>
+            <button class="action-btn">follow</button>
+        </div>
+    </div>
+
+<!-- Sidebar Section End -->
+</section>
+
+<!-- post-->
+
+    
+
+    <div class="post-feed" id="post-feed"></div>
+
+    <div id="add-post-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="image-upload">
+            <label for="post-image">
+                <img src="photos/addpost2.gif" class="postimg">
+            </label>
+            <input type="file" id="post-image" accept="image/*" /> 
+        </div>
+            
+            <input type="text" id="post-name" placeholder="Your Name" />
+            <textarea id="post-caption" placeholder="Write a caption..."></textarea>
+            <button id="post-submit">Post</button>
+        </div>
+    </div> 
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
